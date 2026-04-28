@@ -3,6 +3,7 @@
   --brand-maroon-light: #a43a64;
   --brand-dark: #1a0c14;
   --brand-text: #2d1e27;
+  --brand-green: #10b981;
 }
 
 body {
@@ -65,27 +66,139 @@ body {
   color: #fff;
 }
 
+.hero-stat {
+  border-left: 3px solid var(--brand-maroon);
+  padding-left: 1rem;
+}
+.hero-stat .number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #f1f5f9;
+  line-height: 1;
+}
+.hero-stat .label {
+  font-size: 0.8rem;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* ── Services ───────────────────────────────────────── */
+#services {
+  background: #fcf7f9;
+}
+
+.service-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.service-icon {
+  width: 52px;
+  height: 52px;
+  background: rgba(111, 29, 59, 0.12);
+  color: var(--brand-maroon);
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+/* ── About ──────────────────────────────────────────── */
+#about .about-img-wrap {
+  border-radius: 1.25rem;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1a0c14, #4c1f32);
+  min-height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-check {
+  color: var(--brand-maroon);
+}
+
+/* ── Team ───────────────────────────────────────────── */
+#team {
+  background: #fcf7f9;
+}
+
+.team-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+}
+.team-card .photo-wrap {
+  height: 220px;
+  background: linear-gradient(135deg, #f7e4ec, #efd2dc);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-card .photo-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.team-card .photo-wrap .placeholder-icon {
+  font-size: 5rem;
+  color: #94a3b8;
+}
+.team-card .role-badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  background: rgba(111, 29, 59, 0.12);
+  color: var(--brand-maroon);
+  border-radius: 50px;
+  padding: 0.25rem 0.75rem;
+  display: inline-block;
+}
+.team-card .social-link {
+  color: #64748b;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.15s;
+}
+.team-card .social-link:hover {
+  color: var(--brand-maroon);
+}
+
 /* ── Footer ─────────────────────────────────────────── */
 footer {
   background: var(--brand-dark);
   color: #64748b;
 }
-
 footer a {
   color: #64748b;
   text-decoration: none;
 }
-
 footer a:hover {
   color: var(--brand-maroon-light);
 }
-
 footer .footer-brand {
   color: #f1f5f9;
   font-weight: 700;
   font-size: 1.2rem;
 }
-
 footer .footer-brand span {
   color: var(--brand-maroon-light);
 }
